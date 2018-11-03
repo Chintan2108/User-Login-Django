@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>My Django Firsts</h1>
+  <p>User Login/Logout <em>IITB</em>!</p>
+  
+  <h2>Stats</h2>
+    <ul>
+        <li><strong>Page hits:</strong> {{num_visits}}{% if num_visits == 1 %} time{% else %} times{% endif %}.</li>
+    </ul>
+{% endblock %}
